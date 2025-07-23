@@ -1,0 +1,20 @@
+bruh Hello World program in Skibidi
+gyatt "Hello, Skibidi World!" ohio
+
+skibidi x rizz 42 ohio
+skibidi name rizz "Ohio Sigma" ohio
+
+gyatt "Number: " + x ohio
+gyatt "Name: " + name ohio
+
+cap (x > 40) {
+    gyatt "X is totally bussin!" ohio
+} nocap {
+    gyatt "X is mid" ohio
+}
+
+skibidi counter rizz 1 ohio
+bussin (counter <= 3) {
+    gyatt "Count: " + counter ohio
+    counter rizz counter + 1 ohio
+}

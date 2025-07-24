@@ -1,0 +1,77 @@
+skibidi i rizz 1 ohio
+bussin (i <= 20) {
+    cap ((i % 3 == 0) && (i % 5 == 0)) {
+        gyatt "FizzBuzz" ohio
+    }
+    nocap {
+        cap (i % 3 == 0) {
+            gyatt "Fizz" ohio
+        }
+        nocap {
+            cap (i % 5 == 0) {
+                gyatt "Buzz" ohio
+            }
+            nocap {
+                gyatt i ohio
+            }
+        }
+    }
+    i rizz i + 1 ohio
+}
+
+skibidi n rizz 5 ohio
+skibidi result rizz 1 ohio
+skibidi i rizz 1 ohio
+bussin (i <= n) {
+    result rizz result * i ohio
+    i rizz i + 1 ohio
+}
+gyatt "Factorial of " + n + " is " + result ohio
+
+skibidi n rizz 10 ohio
+skibidi a rizz 0 ohio
+skibidi b rizz 1 ohio
+skibidi i rizz 0 ohio
+bussin (i < n) {
+    gyatt a ohio
+    skibidi temp rizz b ohio
+    b rizz a + b ohio
+    a rizz temp ohio
+    i rizz i + 1 ohio
+}
+
+skibidi age rizz 21 ohio
+cap (age >= 18) {
+    cap (age >= 65) {
+        gyatt "You are a senior." ohio
+    }
+    nocap {
+        gyatt "You are an adult." ohio
+    }
+}
+nocap {
+    gyatt "You are a minor." ohio
+}
+
+skibidi x rizz 0 ohio
+bussin (x < 10) {
+    cap (x == 5) {
+        gyatt "Reached 5, stopping early!" ohio
+        x rizz 10 ohio
+    }
+    nocap {
+        gyatt x ohio
+        x rizz x + 1 ohio
+    }
+}
+
+skibidi a rizz 10 ohio
+skibidi b rizz 20 ohio
+skibidi c rizz (a + b) * 2 / 5 - 3 ohio
+gyatt "c = " + c ohio
+cap (c > 5) {
+    gyatt "c is greater than 5" ohio
+}
+nocap {
+    gyatt "c is not greater than 5" ohio
+}

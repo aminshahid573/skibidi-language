@@ -1,0 +1,10 @@
+skibidi flag rizz true ohio
+cap (flag) {
+    gyatt "Flag is true!" ohio
+}
+nocap {
+    gyatt "Flag is false!" ohio
+}
+
+skibidi test rizz false ohio
+gyatt "Test: " + test ohio

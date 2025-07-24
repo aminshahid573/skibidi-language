@@ -1,0 +1,9 @@
+skibidi s rizz "skibidi" ohio
+gyatt "Length: " + len(s) ohio
+
+gyatt "Abs: " + abs(-42) ohio
+
+gyatt "Str: " + str(123.45) ohio
+
+skibidi t rizz "hello world" ohio
+gyatt "Length of t: " + len(t) ohio

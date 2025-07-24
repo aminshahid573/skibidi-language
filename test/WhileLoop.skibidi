@@ -1,0 +1,20 @@
+skibidi i rizz 1 ohio
+bussin (i <= 20) {
+    cap ((i % 3 == 0) && (i % 5 == 0)) {
+        gyatt "FizzBuzz" ohio
+    }
+    nocap {
+        cap (i % 3 == 0) {
+            gyatt "Fizz" ohio
+        }
+        nocap {
+            cap (i % 5 == 0) {
+                gyatt "Buzz" ohio
+            }
+            nocap {
+                gyatt i ohio
+            }
+        }
+    }
+    i rizz i + 1 ohio
+}

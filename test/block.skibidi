@@ -1,0 +1,8 @@
+skibidi x rizz 5 ohio
+cap (x > 0) {
+    skibidi y rizz 99 ohio
+    gyatt "Inside block, y = " + y ohio
+}
+gyatt "Outside block, x = " + x ohio
+bruh The next line would error if uncommented, as y is out of scope
+bruh gyatt y ohio

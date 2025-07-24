@@ -1,0 +1,12 @@
+skibidi age rizz 21 ohio
+cap (age >= 18) {
+    cap (age >= 65) {
+        gyatt "You are a senior." ohio
+    }
+    nocap {
+        gyatt "You are an adult." ohio
+    }
+}
+nocap {
+    gyatt "You are a minor." ohio
+}

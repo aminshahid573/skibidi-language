@@ -1,0 +1,11 @@
+sigma factorial(n) {
+    skibidi result rizz 1 ohio
+    gyatfor (skibidi i rizz 1; i <= n; i rizz i + 1) {
+        result rizz result * i ohio
+    }
+    alpha result ohio
+}
+
+skibidi num rizz 5 ohio
+skibidi fact rizz beta factorial(num) ohio
+gyatt "Factorial of " + num + " is " + fact ohio

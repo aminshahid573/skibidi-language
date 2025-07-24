@@ -1,152 +1,197 @@
+# 🚽 Skibidi Programming Language
 
-# SkibidiLang Installation Guide
+A meme-powered, beginner-friendly programming language with a unique, playful syntax. Skibidi supports variables, arithmetic, logic, loops, functions, block scoping, built-ins, and more—all with a Skibidi twist.
 
-## Windows
+---
 
-1. **Double-click** on the `install.bat` file.
-2. **Restart** your terminal (Command Prompt or PowerShell).
-3. If the terminal still doesn't recognize `skibidi` as a command:
-   - Manually move `skibidi.exe` to a folder already in your system PATH (e.g., `C:\Windows` or any other folder added to your environment variables).
-   - Or add the SkibidiLang folder to your system environment variables.
+## 🌐 Try Skibidi Online!
 
-## macOS & Linux
+Check out our **interactive documentation and playground**:
 
-1. Open a terminal.
-2. Run the following command:
+👉 [skibidilang.netlify.app](https://skibidilang.netlify.app)
 
-   ```bash
-   chmod +x install.sh && ./install.sh
+- Run Skibidi code in your browser
+- Explore interactive docs and examples
+- Perfect for learning, experimenting, and sharing
+
+---
+
+## Features
+- Meme-inspired keywords and error messages
+- Variables, assignment, and block scoping
+- Arithmetic, comparison, and logical operators
+- If/else, while, and for loops
+- Functions (including recursion and higher-order)
+- Built-in functions: `len`, `abs`, `str`
+- Interactive REPL mode
+- Beginner-friendly and fun!
+
+---
+
+## Installation
+
+### Windows
+1. **Double-click** on `install.bat` in the repo folder.
+2. **Restart your terminal** (Command Prompt or PowerShell).
+3. If `skibidi` is still not recognized:
+   - **Manually create** a folder at `C:/skibidilang` (if it doesn't exist).
+   - **Move** `skibidi.exe` into `C:/skibidilang`.
+   - **Add** `C:/skibidilang` to your system PATH environment variable:
+     - Open System Properties → Environment Variables → System variables → Path → Edit → New → `C:/skibidilang` → OK.
+   - Restart your terminal again.
+
+### Mac/Linux
+1. Open a terminal and navigate to the repo folder:
+   ```sh
+   cd skibidi-language
+   chmod +x install.sh
+   ./install.sh
+   ```
+2. If `skibidi` is still not recognized, add the repo folder to your PATH or move the `skibidi` binary to `/usr/local/bin`:
+   ```sh
+   sudo mv skibidi /usr/local/bin
    ```
 
-3. Restart your terminal.
-4. If `skibidi` is still not recognized:
-   - Manually move the `skibidi` binary to `/usr/local/bin` using:
+---
 
-     ```bash
-     sudo mv skibidi /usr/local/bin
-     ```
+## Usage
 
-   - Make sure `/usr/local/bin` is in your `$PATH`.
+### Run a Skibidi Program
+- **Windows:**
+  ```sh
+  skibidi.exe run myfile.skibidi
+  ```
+- **Linux/Mac:**
+  ```sh
+  ./skibidi run myfile.skibidi
+  ```
 
-
-
-# 📚 SkibidiLang Language Documentation
-
-Welcome to the official documentation for **SkibidiLang**, a fun and expressive programming language created using Go. This guide explains the syntax, keywords, and behaviors in SkibidiLang.
+### Start Interactive Mode (REPL)
+- **Windows:**
+  ```sh
+  skibidi.exe -i
+  ```
+- **Linux/Mac:**
+  ```sh
+  ./skibidi -i
+  ```
 
 ---
 
-## 🔤 Keywords
+## Language Syntax
 
-| Keyword  | Purpose                       |
-| -------- | ----------------------------- |
-| `rizz`   | Declare a variable            |
-| `gyatt`  | Loop (`while`)                |
-| `ohio`   | Print to console              |
-| `bussin` | `else` block                  |
-| `if`     | Start conditional block       |
-| `true`   | Boolean true                  |
-| `false`  | Boolean false                 |
-| `null`   | Null literal                  |
-| `and`    | Logical AND                   |
-| `or`     | Logical OR                    |
-| `not`    | Logical NOT                   |
-| `fn`     | Function declaration (future) |
-
----
-
-## 📄 Variables
-
-### Declare a Variable
-
+### Variable Declaration & Assignment
 ```skibidi
-rizz name = "Shahid";
-rizz age = 20;
-rizz isCool = true;
+skibidi x rizz 5 ohio
+x rizz 10 ohio
 ```
 
----
+### Print
+```skibidi
+gyatt "Hello, Skibidi!" ohio
+gyatt x ohio
+```
 
-## ➕ Operators
-
-* Arithmetic: `+`, `-`, `*`, `/`
-* Comparison: `==`, `!=`, `<`, `<=`, `>`, `>=`
-* Logical: `and`, `or`, `not`
-
----
-
-## 🔁 Loops
+### If/Else
+```skibidi
+cap (x > 5) {
+    gyatt "x is big" ohio
+}
+nocap {
+    gyatt "x is small" ohio
+}
+```
 
 ### While Loop
-
 ```skibidi
-rizz x = 0;
-gyatt (x < 5) {
-  ohio x;
-  x = x + 1;
+bussin (x < 10) {
+    gyatt x ohio
+    x rizz x + 1 ohio
 }
 ```
 
----
-
-## 🧠 Conditionals
-
+### For Loop
 ```skibidi
-rizz score = 85;
-
-if (score > 90) {
-  ohio "You got an A+";
-} bussin {
-  ohio "Try harder next time.";
+gyatfor (skibidi i rizz 0; i < 5; i rizz i + 1) {
+    gyatt i ohio
 }
 ```
 
----
-
-## 🗣️ Output
-
+### Functions
 ```skibidi
-ohio "Hello, World!";
-ohio 3 + 4;
-```
-
----
-
-## 🤖 Boolean Logic
-
-```skibidi
-rizz isSkibidi = true;
-rizz isSigma = false;
-
-if (isSkibidi and not isSigma) {
-  ohio "You are skibidi but not sigma.";
+sigma add(a, b) {
+    alpha a + b ohio
 }
+skibidi result rizz beta add(10, 32) ohio
+gyatt result ohio
+```
+
+### Input
+```skibidi
+gyatt "Enter your name:" ohio
+skibidi name rizz input ohio
+gyatt "Hello, " + name + "!" ohio
+```
+
+### Comments
+```skibidi
+bruh this is a comment
 ```
 
 ---
 
-## 🧪 REPL Mode
+## Built-in Functions
+| Function | Usage         | Description                  |
+|----------|--------------|------------------------------|
+| len      | len(s)       | Length of string `s`         |
+| abs      | abs(x)       | Absolute value of number `x` |
+| str      | str(x)       | Converts number `x` to string|
 
-Start interactive shell:
+---
 
-```bash
-skibidi
+## Example Program
+
+```skibidi
+bruh 🚽 Skibidi Ultimate Feature Test 🚽
+
+gyatt "Welcome to the Skibidi Ultimate Feature Test!" ohio
+
+gyatt "What's your name, Skibidi enjoyer?" ohio
+skibidi username rizz input ohio
+gyatt "Nice to meet you, " + username + "!" ohio
+
+skibidi a rizz 7 ohio
+skibidi b rizz 3 ohio
+gyatt "a = " + a + ", b = " + b ohio
+
+skibidi sum rizz a + b ohio
+gyatt "Sum: " + sum ohio
+
+sigma factorial(n) {
+    cap (n <= 1) {
+        alpha 1 ohio
+    }
+    nocap {
+        alpha n * beta factorial(n - 1) ohio
+    }
+}
+skibidi num rizz 5 ohio
+skibidi fact rizz beta factorial(num) ohio
+gyatt "Factorial of " + num + " is " + fact ohio
 ```
 
-You can type SkibidiLang code directly and get output instantly.
+---
+
+## Interactive Mode (REPL)
+- Start with `skibidi -i` or `skibidi.exe -i`.
+- Enter statements, expressions, or multi-line blocks.
+- Use `:help`, `:vars`, `:funcs`, or `exit` for REPL commands.
 
 ---
 
-## 🔧 Future Work
+## Stay Skibidi!
+- All keywords and errors are meme-inspired for max fun.
+- Beginner-friendly, readable, and playful.
+- Extend, remix, and meme on!
 
-* Function declarations
-* Better error reporting
-* File I/O support
-
----
-
-## 🧑‍💻 Created by
-
-Shahid Amin & Team
-
-MIT License
+If you want syntax highlighting, see the [docs](doc.md) or ask for a VSCode extension! 

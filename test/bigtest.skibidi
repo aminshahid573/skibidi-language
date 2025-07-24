@@ -1,0 +1,90 @@
+bruh 🚽 Skibidi Ultimate Feature Test 🚽
+
+gyatt "Welcome to the Skibidi Ultimate Feature Test!" ohio
+
+bruh --- Input and Variables ---
+gyatt "What's your name, Skibidi enjoyer?" ohio
+skibidi username rizz input ohio
+gyatt "Nice to meet you, " + username + "!" ohio
+
+skibidi a rizz 7 ohio
+skibidi b rizz 3 ohio
+gyatt "a = " + a + ", b = " + b ohio
+
+bruh --- Arithmetic, Logic, and Assignment ---
+skibidi sum rizz a + b ohio
+skibidi diff rizz a - b ohio
+skibidi prod rizz a * b ohio
+skibidi quot rizz a / b ohio
+skibidi mod rizz a % b ohio
+gyatt "Sum: " + sum + ", Diff: " + diff + ", Prod: " + prod + ", Quot: " + quot + ", Mod: " + mod ohio
+
+skibidi isBig rizz (a > b) && (sum > 5) ohio
+gyatt "Is a bigger than b and sum > 5? " + isBig ohio
+
+bruh --- If/Else, Boolean, and Block Scope ---
+cap (isBig) {
+    skibidi msg rizz "Big Skibidi!" ohio
+    gyatt msg ohio
+    skibidi scopedVar rizz 42 ohio
+    gyatt "Scoped var: " + scopedVar ohio
+}
+nocap {
+    gyatt "Not so big, Skibidi." ohio
+}
+bruh gyatt scopedVar ohio  # This would error if uncommented (scopedVar is out of scope)
+
+bruh --- While Loop ---
+skibidi counter rizz 0 ohio
+bussin (counter < 3) {
+    gyatt "Counting: " + counter ohio
+    counter rizz counter + 1 ohio
+}
+
+bruh --- For Loop ---
+gyatfor (skibidi i rizz 1; i <= 5; i rizz i + 1) {
+    gyatt "For loop i: " + i ohio
+}
+
+bruh --- Functions: Recursion, Higher-Order, and Built-ins ---
+sigma factorial(n) {
+    cap (n <= 1) {
+        alpha 1 ohio
+    }
+    nocap {
+        alpha n * beta factorial(n - 1) ohio
+    }
+}
+
+skibidi num rizz 6 ohio
+skibidi fact rizz beta factorial(num) ohio
+gyatt "Factorial of " + num + " is " + fact ohio
+
+sigma shout(msg) {
+    gyatt msg + "!!!" ohio
+}
+
+beta shout("Skibidi is sigma") ohio
+
+sigma applyTwice(f, x) {
+    alpha beta f(beta f(x)) ohio
+}
+
+sigma plusOne(n) {
+    alpha n + 1 ohio
+}
+
+gyatt "Apply plusOne twice to 10: " + beta applyTwice(plusOne, 10) ohio
+
+bruh --- Built-in Functions ---
+skibidi s rizz "skibidi" ohio
+gyatt "Length of s: " + len(s) ohio
+gyatt "Abs of -99: " + abs(-99) ohio
+gyatt "Stringify 3.1415: " + str(3.1415) ohio
+
+bruh --- Logical OR and AND ---
+skibidi testOr rizz (false || true) ohio
+skibidi testAnd rizz (true && false) ohio
+gyatt "Logical OR: " + testOr + ", AND: " + testAnd ohio
+
+gyatt "All tests completed! Stay Skibidi!" ohio
